@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.card-container {
+  position: relative;
+}
+
+.card {
+  display: block;
+  background-color: white;
+}
+
+.card-container:hover .card-name {
+  display: none;
+}
+
+.card-down {
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(221, 227, 248, 0.836);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card-down:hover {
+  opacity: 1;
+}
+
+.card-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.details {
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.details h5 {
+  color: gray;
+}
+
+.details h4 {
+  color: black;
+}
